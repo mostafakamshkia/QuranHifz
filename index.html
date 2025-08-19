@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع القرآن الكريم</title>
+    <!-- تحميل خط Almarai من جوجل فونت لتصميم أجمل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+    <!-- تحميل مكتبة Tailwind CSS للتصميم السريع والمتجاوب -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #e9f5ff; /* لون سماوي فاتح */
+        }
+        .icon-card {
+            /* تصميم الأيقونات */
+            background-color: #ffffff;
+            border-radius: 2rem; /* حواف دائرية كبيرة */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* ظل جذاب */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير حركي عند المرور بالماوس */
+            animation: pulse 2s infinite; /* تطبيق تأثير الحركة */
+        }
+        .icon-card:hover {
+            transform: translateY(-8px) scale(1.05); /* تكبير بسيط عند المرور بالماوس */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            animation: none; /* إيقاف النبض عند المرور بالماوس */
+        }
+        .icon-emoji {
+            font-size: 8rem; /* حجم كبير للأيقونة */
+            line-height: 1; /* ضبط المسافة بين الأسطر */
+        }
+
+        /* كود تأثير الحركة */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 text-center">
+    
+    <!-- عنوان الصفحة -->
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-900 mb-8">
+        اختر شخصيتك 🤩
+    </h1>
+    
+    <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 max-w-2xl mx-auto">
+        
+        <!-- أيقونة الأولاد -->
+        <a href="surah-al-falaq.html" class="icon-card flex flex-col items-center justify-center p-8 w-full md:w-64 cursor-pointer">
+            <span class="icon-emoji" role="img" aria-label="Boy Icon">👦</span>
+            <p class="mt-4 text-3xl font-bold text-blue-700">أنا ولد</p>
+        </a>
+        
+        <!-- أيقونة البنات -->
+        <a href="surah-al-falaq.html" class="icon-card flex flex-col items-center justify-center p-8 w-full md:w-64 cursor-pointer">
+            <span class="icon-emoji" role="img" aria-label="Girl Icon">👧</span>
+            <p class="mt-4 text-3xl font-bold text-pink-500">أنا بنت</p>
+        </a>
+    </div>
+
+    <!-- ملاحظة مهمة للمستخدمين -->
+    <p class="mt-8 text-sm text-gray-500 max-w-md">
+        ملحوظة: الأيقونات دي مجرد رابط لصفحة سورة الفلق، بعدين ممكن نعمل لكل أيقونة صفحة خاصة بيها.
+    </p>
+
+</body>
+</html>
